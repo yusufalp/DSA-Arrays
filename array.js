@@ -62,38 +62,6 @@ class Array {
     memory.copy(this.ptr + index, this.ptr + index + 1, this.length - index - 1);
     this.length--;
   }
-
-  replace() {
-
-  }
-
-  filter() {
-
-  }
-
-  maxSum() {
-
-  }
-
-  merge() {
-
-  }
-
-  remove() {
-
-  }
-
-  productsOther() {
-
-  }
-
-  zeroColumn() {
-
-  }
-
-  strRotation() {
-
-  }
 }
 
 Array.SIZE_RATIO = 3;
@@ -103,23 +71,19 @@ Array.SIZE_RATIO = 3;
 //   let arr = new Array;
 
 //   arr.push(3);
-
 //   console.log(arr);
 
 //   arr.push(5);
 //   arr.push(10);
 //   arr.push(19);
-
 //   console.log(arr);
 
 //   arr.pop();
 //   arr.pop();
 //   arr.pop();
-
 //   console.log(arr);
 
 //   arr.push('Tauhida');
-
 //   console.log(arr);
 // }
 
@@ -142,4 +106,4 @@ function replace(str) {
   console.log(result)
 }
 
-replace('tauhida parveen')
+replace('www.thinkful.com /tauh ida parv een')
