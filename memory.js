@@ -1,6 +1,6 @@
 class Memory {
   constructor() {
-    this.memory = new Float64Array(1024);
+    this.memory = new Array(1024);
     this.head = 0;
   }
 
@@ -36,10 +36,12 @@ class Memory {
   }
 
   get(ptr) {
+    // console.log(this.memory,ptr)
     return this.memory[ptr];
   }
 
   set(ptr, value) {
+    // console.log(this.memory,ptr,value)
     this.memory[ptr] = value;
   }
 }

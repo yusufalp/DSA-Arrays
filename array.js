@@ -1,4 +1,5 @@
-const memory = require('./memory');
+const Memory = require('./memory');
+const memory = new Memory()
 
 class Array {
   constructor() {
@@ -62,69 +63,83 @@ class Array {
     this.length--;
   }
 
-  replace(value, replacement){
-    if (this.length >= this.capacity) {
-      this._resize((this.length + 1) * Array.SIZE_RATIO);
-    }
-    memory.get()
-  }
-
-  filter(){
+  replace() {
 
   }
 
-  maxSum(){
+  filter() {
 
   }
 
-  merge(){
+  maxSum() {
 
   }
 
-  remove(){
+  merge() {
 
   }
 
-  productsOther(){
+  remove() {
 
   }
 
-  zeroColumn(){
+  productsOther() {
 
   }
 
-  strRotation(){
-    
+  zeroColumn() {
+
+  }
+
+  strRotation() {
+
   }
 }
 
 Array.SIZE_RATIO = 3;
 
-function main() {
-  let arr = new Array();
 
-  arr.push(3);
+// function main() {
+//   let arr = new Array;
 
-  console.log(arr);
+//   arr.push(3);
 
-  arr.push(5);
-  arr.push(10);
-  arr.push(19);
+//   console.log(arr);
 
-  console.log(arr);
+//   arr.push(5);
+//   arr.push(10);
+//   arr.push(19);
 
-  arr.pop();
-  arr.pop();
-  arr.pop();
+//   console.log(arr);
 
-  console.log(arr);
+//   arr.pop();
+//   arr.pop();
+//   arr.pop();
 
+//   console.log(arr);
 
-  console.log(arr[0]);
+//   arr.push('Tauhida');
 
-  arr.push('tauhida');
+//   console.log(arr);
+// }
 
-  console.log(arr[0]);
+// main()
 
+function replace(str) {
+  let newStr = new Array()
+  for (let i = 0; i < str.length; i++) {
+    if (str[i] === ' ') {
+      newStr.push('%20')
+    } else {
+      newStr.push(str[i])
+    }
+  }
 
+  let result = ''
+  for (let j = 0; j < newStr.length; j++) {
+    result += newStr.get(j)
+  }
+  console.log(result)
 }
+
+replace('tauhida parveen')
