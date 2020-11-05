@@ -221,7 +221,19 @@ function twoDArray(arr) {
   [1, 0, 1, 1, 1],
   [1, 1, 1, 1, 1]
 ])
-
 */
 
+// #12
 
+function rotation(str, answer) {
+  let newWord = str
+  for (let i = 0; i < str.length; i++) {
+    newWord = newWord.substring(1) + newWord[0]
+    if (newWord === answer) {
+      return true
+    }
+  }
+  return false
+}
+
+console.log(rotation('azonam', 'amazon'))
